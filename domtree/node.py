@@ -1,5 +1,6 @@
 from types import GeneratorType
 from typing import Any, Callable, Dict, Generator, List, Union
+from typing_extensions import Self
 
 
 class Node:
@@ -31,6 +32,30 @@ class Node:
         new_node = Node(self.tag)
         new_node.children = _flatten(list(children))
         new_node.attributes = {**self.attributes, **attributes}
+        new_node.formatters = {**self.formatters}
+        return new_node
+
+    def add(self, **attributes: float) -> Self:
+        attrs = {k: v for k, v in self.attributes.items()}
+
+        for k, v in attributes.items():
+            attrs[k] = float(attrs[k]) + v
+
+        new_node = Node(self.tag)
+        new_node.children = [*self.children]
+        new_node.attributes = attrs
+        new_node.formatters = {**self.formatters}
+        return new_node
+
+    def mul(self, **attributes: float) -> Self:
+        attrs = {k: v for k, v in self.attributes.items()}
+
+        for k, v in attributes.items():
+            attrs[k] = float(attrs[k]) * v
+
+        new_node = Node(self.tag)
+        new_node.children = [*self.children]
+        new_node.attributes = attrs
         new_node.formatters = {**self.formatters}
         return new_node
 
