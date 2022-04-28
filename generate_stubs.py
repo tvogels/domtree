@@ -33,7 +33,7 @@ template = jinja2.Template(
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "{{tag | title | replace("-", "")}}":  # type: ignore
         \"\"\"
         `<{{tag}}{% for attr in attributes %} {{attr}}{% endfor %} />` [(docs)]({{url}})

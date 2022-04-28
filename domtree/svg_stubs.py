@@ -42,7 +42,7 @@ class A(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "A":  # type: ignore
         """
         `<a href target xlink:href />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a)
@@ -99,7 +99,7 @@ class Altglyph(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Altglyph":  # type: ignore
         """
         `<altGlyph x y dx dy rotate glyphRef format xlink:href />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyph)
@@ -130,7 +130,7 @@ class Altglyphdef(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Altglyphdef":  # type: ignore
         """
         `<altGlyphDef />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyphDef)
@@ -161,7 +161,7 @@ class Altglyphitem(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Altglyphitem":  # type: ignore
         """
         `<altGlyphItem />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyphItem)
@@ -202,7 +202,7 @@ class Animate(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Animate":  # type: ignore
         """
         `<animate />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate)
@@ -243,7 +243,7 @@ class Animatecolor(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Animatecolor":  # type: ignore
         """
         `<animateColor />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateColor)
@@ -291,7 +291,7 @@ class Animatemotion(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Animatemotion":  # type: ignore
         """
         `<animateMotion keyPoints path rotate />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion)
@@ -336,7 +336,7 @@ class Animatetransform(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Animatetransform":  # type: ignore
         """
         `<animateTransform />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform)
@@ -379,7 +379,7 @@ class Circle(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Circle":  # type: ignore
         """
         `<circle cx cy r pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle)
@@ -442,7 +442,7 @@ class Clippath(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Clippath":  # type: ignore
         """
         `<clipPath clipPathUnits />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath)
@@ -496,7 +496,7 @@ class Cursor(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Cursor":  # type: ignore
         """
         `<cursor />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/cursor)
@@ -546,7 +546,7 @@ class Defs(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Defs":  # type: ignore
         """
         `<defs />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs)
@@ -611,7 +611,7 @@ class Desc(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Desc":  # type: ignore
         """
         `<desc />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/desc)
@@ -657,7 +657,7 @@ class Discard(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Discard":  # type: ignore
         """
         `<discard />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/discard)
@@ -701,7 +701,7 @@ class Ellipse(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Ellipse":  # type: ignore
         """
         `<ellipse cx cy rx ry pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse)
@@ -740,7 +740,7 @@ class Feblend(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feblend":  # type: ignore
         """
         `<feBlend />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend)
@@ -771,7 +771,7 @@ class Fecolormatrix(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fecolormatrix":  # type: ignore
         """
         `<feColorMatrix />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix)
@@ -810,7 +810,7 @@ class Fecomponenttransfer(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fecomponenttransfer":  # type: ignore
         """
         `<feComponentTransfer />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer)
@@ -914,7 +914,7 @@ class Fecomposite(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fecomposite":  # type: ignore
         """
         `<feComposite />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite)
@@ -1010,7 +1010,7 @@ class Feconvolvematrix(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feconvolvematrix":  # type: ignore
         """
         `<feConvolveMatrix />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix)
@@ -1041,7 +1041,7 @@ class Fediffuselighting(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fediffuselighting":  # type: ignore
         """
         `<feDiffuseLighting />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting)
@@ -1072,7 +1072,7 @@ class Fedisplacementmap(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fedisplacementmap":  # type: ignore
         """
         `<feDisplacementMap />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap)
@@ -1103,7 +1103,7 @@ class Fedistantlight(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fedistantlight":  # type: ignore
         """
         `<feDistantLight />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight)
@@ -1166,7 +1166,7 @@ class Fedropshadow(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fedropshadow":  # type: ignore
         """
         `<feDropShadow dx dy stdDeviation />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow)
@@ -1226,7 +1226,7 @@ class Feflood(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feflood":  # type: ignore
         """
         `<feFlood />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood)
@@ -1257,7 +1257,7 @@ class Fefunca(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fefunca":  # type: ignore
         """
         `<feFuncA />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA)
@@ -1288,7 +1288,7 @@ class Fefuncb(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fefuncb":  # type: ignore
         """
         `<feFuncB />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB)
@@ -1319,7 +1319,7 @@ class Fefuncg(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fefuncg":  # type: ignore
         """
         `<feFuncG />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG)
@@ -1350,7 +1350,7 @@ class Fefuncr(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fefuncr":  # type: ignore
         """
         `<feFuncR />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR)
@@ -1402,7 +1402,7 @@ class Fegaussianblur(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fegaussianblur":  # type: ignore
         """
         `<feGaussianBlur />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur)
@@ -1454,7 +1454,7 @@ class Feimage(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feimage":  # type: ignore
         """
         `<feImage />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage)
@@ -1485,7 +1485,7 @@ class Femerge(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Femerge":  # type: ignore
         """
         `<feMerge />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge)
@@ -1516,7 +1516,7 @@ class Femergenode(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Femergenode":  # type: ignore
         """
         `<feMergeNode />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode)
@@ -1564,7 +1564,7 @@ class Femorphology(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Femorphology":  # type: ignore
         """
         `<feMorphology />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology)
@@ -1612,7 +1612,7 @@ class Feoffset(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feoffset":  # type: ignore
         """
         `<feOffset />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset)
@@ -1643,7 +1643,7 @@ class Fepointlight(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fepointlight":  # type: ignore
         """
         `<fePointLight />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight)
@@ -1674,7 +1674,7 @@ class Fespecularlighting(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fespecularlighting":  # type: ignore
         """
         `<feSpecularLighting />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting)
@@ -1705,7 +1705,7 @@ class Fespotlight(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fespotlight":  # type: ignore
         """
         `<feSpotLight />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight)
@@ -1736,7 +1736,7 @@ class Fetile(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Fetile":  # type: ignore
         """
         `<feTile />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile)
@@ -1767,7 +1767,7 @@ class Feturbulence(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Feturbulence":  # type: ignore
         """
         `<feTurbulence />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence)
@@ -1798,7 +1798,7 @@ class Filter(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Filter":  # type: ignore
         """
         `<filter />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter)
@@ -1829,7 +1829,7 @@ class Font(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Font":  # type: ignore
         """
         `<font />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font)
@@ -1860,7 +1860,7 @@ class FontFace(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "FontFace":  # type: ignore
         """
         `<font-face />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face)
@@ -1891,7 +1891,7 @@ class FontFaceFormat(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "FontFaceFormat":  # type: ignore
         """
         `<font-face-format />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-format)
@@ -1922,7 +1922,7 @@ class FontFaceName(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "FontFaceName":  # type: ignore
         """
         `<font-face-name />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-name)
@@ -1953,7 +1953,7 @@ class FontFaceSrc(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "FontFaceSrc":  # type: ignore
         """
         `<font-face-src />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-src)
@@ -1984,7 +1984,7 @@ class FontFaceUri(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "FontFaceUri":  # type: ignore
         """
         `<font-face-uri />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-uri)
@@ -2051,7 +2051,7 @@ class Foreignobject(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Foreignobject":  # type: ignore
         """
         `<foreignObject height width x y />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject)
@@ -2126,7 +2126,7 @@ class G(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "G":  # type: ignore
         """
         `<g />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g)
@@ -2169,7 +2169,7 @@ class Glyph(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Glyph":  # type: ignore
         """
         `<glyph />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyph)
@@ -2200,7 +2200,7 @@ class Glyphref(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Glyphref":  # type: ignore
         """
         `<glyphRef />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyphRef)
@@ -2231,7 +2231,7 @@ class Hatch(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Hatch":  # type: ignore
         """
         `<hatch />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/hatch)
@@ -2262,7 +2262,7 @@ class Hatchpath(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Hatchpath":  # type: ignore
         """
         `<hatchpath />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/hatchpath)
@@ -2293,7 +2293,7 @@ class Hkern(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Hkern":  # type: ignore
         """
         `<hkern />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/hkern)
@@ -2324,7 +2324,7 @@ class Image(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Image":  # type: ignore
         """
         `<image />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image)
@@ -2371,7 +2371,7 @@ class Line(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Line":  # type: ignore
         """
         `<line x1 x2 y1 y2 pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line)
@@ -2439,7 +2439,7 @@ class Lineargradient(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Lineargradient":  # type: ignore
         """
         `<linearGradient gradientUnits gradientTransform href spreadMethod x1 x2 xlink:href y1 y2 />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient)
@@ -2524,7 +2524,7 @@ class Marker(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Marker":  # type: ignore
         """
         `<marker markerHeight markerUnits markerWidth orient preserveAspectRatio refX refY viewBox />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker)
@@ -2609,7 +2609,7 @@ class Mask(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Mask":  # type: ignore
         """
         `<mask height maskContentUnits maskUnits x y width />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask)
@@ -2659,7 +2659,7 @@ class Metadata(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Metadata":  # type: ignore
         """
         `<metadata />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata)
@@ -2690,7 +2690,7 @@ class MissingGlyph(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "MissingGlyph":  # type: ignore
         """
         `<missing-glyph />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/missing-glyph)
@@ -2721,7 +2721,7 @@ class Mpath(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Mpath":  # type: ignore
         """
         `<mpath />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mpath)
@@ -2766,7 +2766,7 @@ class Path(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Path":  # type: ignore
         """
         `<path d pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path)
@@ -2835,7 +2835,7 @@ class Pattern(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Pattern":  # type: ignore
         """
         `<pattern height href patternContentUnits patternTransform patternUnits preserveAspectRatio viewBox width x xlink:href y />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern)
@@ -2896,7 +2896,7 @@ class Polygon(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Polygon":  # type: ignore
         """
         `<polygon points pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon)
@@ -2955,7 +2955,7 @@ class Polyline(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Polyline":  # type: ignore
         """
         `<polyline points pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline)
@@ -3027,7 +3027,7 @@ class Radialgradient(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Radialgradient":  # type: ignore
         """
         `<radialGradient cx cy fr fx fy gradientUnits gradientTransform href r spreadMethod xlink:href />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/radialGradient)
@@ -3094,7 +3094,7 @@ class Rect(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Rect":  # type: ignore
         """
         `<rect x y width height rx ry pathLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect)
@@ -3140,7 +3140,7 @@ class Script(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Script":  # type: ignore
         """
         `<script href type xlink:href />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script)
@@ -3187,7 +3187,7 @@ class Set(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Set":  # type: ignore
         """
         `<set to />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/set)
@@ -3253,7 +3253,7 @@ class Stop(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Stop":  # type: ignore
         """
         `<stop offset stop-color stop-opacity />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop)
@@ -3320,7 +3320,7 @@ class Style(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Style":  # type: ignore
         """
         `<style type media title />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/style)
@@ -3390,7 +3390,7 @@ class Svg(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Svg":  # type: ignore
         """
         `<svg baseProfile contentScriptType contentStyleType height preserveAspectRatio version viewBox width x y />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg)
@@ -3434,7 +3434,7 @@ class Switch(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Switch":  # type: ignore
         """
         `<switch />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/switch)
@@ -3494,7 +3494,7 @@ class Symbol(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Symbol":  # type: ignore
         """
         `<symbol height preserveAspectRatio refX refY viewBox width x y />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol)
@@ -3573,7 +3573,7 @@ class Text(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Text":  # type: ignore
         """
         `<text x y dx dy rotate lengthAdjust textLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text)
@@ -3652,7 +3652,7 @@ class Textpath(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Textpath":  # type: ignore
         """
         `<textPath href lengthAdjust method path side spacing startOffset textLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath)
@@ -3717,7 +3717,7 @@ class Title(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Title":  # type: ignore
         """
         `<title />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title)
@@ -3762,7 +3762,7 @@ class Tref(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Tref":  # type: ignore
         """
         `<tref />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tref)
@@ -3817,7 +3817,7 @@ class Tspan(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Tspan":  # type: ignore
         """
         `<tspan x y dx dy rotate lengthAdjust textLength />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan)
@@ -3887,7 +3887,7 @@ class Use(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Use":  # type: ignore
         """
         `<use href xlink:href x y width height />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use)
@@ -3942,7 +3942,7 @@ class View(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "View":  # type: ignore
         """
         `<view />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view)
@@ -3981,7 +3981,7 @@ class Vkern(Node):
     @overload
     def __call__(
         self,
-        *children: Union[Node, str, Generator[Union[Node, str], None, None]],
+        *children: Union[Node, str, Generator[Union[Node, str, None], None, None], None],
     ) -> "Vkern":  # type: ignore
         """
         `<vkern />` [(docs)](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/vkern)

@@ -1,5 +1,5 @@
 from types import GeneratorType
-from typing import Any, Callable, Dict, Generator, List, Union
+from typing import Any, Callable, Dict, Generator, List, Union, Optional
 from typing_extensions import Self
 
 
@@ -17,9 +17,9 @@ class Node:
 
     def __call__(
         self,
-        *children: Union["Node", Generator[Union["Node", str], None, None], str],
+        *children: Union["Node", Generator[Union["Node", str, None], None, None], str, None],
         **attributes: Any,
-    ) -> "Node":
+    ) -> Self:
         if len(self.children) > 0 and len(children) > 0:
             raise ValueError("Cannot add children to a node that already has children")
 
