@@ -29,7 +29,7 @@ class Node:
                 f"node(x=4,y=5)(child1, child2, child3)"
             )
 
-        new_node = Node(self.tag)
+        new_node = type(self)(self.tag)
         new_node.children = _flatten(list(children))
         new_node.attributes = {**self.attributes, **attributes}
         new_node.formatters = {**self.formatters}
@@ -91,6 +91,8 @@ class Node:
             vstr = " ".join(value)
         elif isinstance(value, dict):
             vstr = "".join(f"{k}:{v};" for k, v in value.items())
+        elif isinstance(value, float):
+            vstr = f"{value:g}"
         else:
             vstr = f"{value}"
 
