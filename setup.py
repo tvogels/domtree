@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="domtree",
-    version="0.0.1",
+    version="0.0.2",
     description="DOM Tree syntax for python",
     url="http://github.com/tvogels/domtree",
     author="Thijs Vogels",
