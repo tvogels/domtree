@@ -5,7 +5,7 @@ from typing_extensions import Self
 
 class Node:
     tag: str
-    children: List[Union["Node", str]]
+    children: List[Any]
     attributes: Dict[str, Any]
     formatters: Dict[str, Callable[[Any], str]]
 
@@ -17,7 +17,7 @@ class Node:
 
     def __call__(
         self,
-        *children: Union["Node", Generator[Union["Node", str, None], None, None], str, None],
+        *children: Union[Any, Generator[Union[Any, None], None, None], None],
         **attributes: Any,
     ) -> Self:
         if len(self.children) > 0 and len(children) > 0:
@@ -88,7 +88,7 @@ class Node:
         if key in self.formatters:
             vstr = self.formatters[key](value)
         elif isinstance(value, list):
-            vstr = " ".join(value)
+            vstr = " ".join(str(v) for v in value)
         elif isinstance(value, dict):
             vstr = "".join(f"{k}:{v};" for k, v in value.items())
         elif isinstance(value, float):
@@ -97,6 +97,15 @@ class Node:
             vstr = f"{value}"
 
         return f' {kstr}="{vstr}"'
+
+    def all_nodes(self, tree: Optional[Self] = None):
+        if tree is None:
+            tree = self
+        yield tree
+        if isinstance(tree, Node):
+            for child in tree.children:
+                for entry in self.all_nodes(child):
+                    yield entry
 
 
 def _flatten(x: List) -> List:
