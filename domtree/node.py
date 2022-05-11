@@ -98,14 +98,14 @@ class Node:
 
         return f' {kstr}="{vstr}"'
 
-    def all_nodes(self, tree: Optional[Self] = None):
-        if tree is None:
-            tree = self
-        yield tree
-        if isinstance(tree, Node):
-            for child in tree.children:
-                for entry in self.all_nodes(child):
-                    yield entry
+    def all_nodes(self):
+        def all_nodes_rec(tree):
+            yield tree
+            if isinstance(tree, Node):
+                for child in tree.children:
+                    for entry in all_nodes_rec(child):
+                        yield entry
+        return all_nodes_rec(self)
 
 
 def _flatten(x: List) -> List:
