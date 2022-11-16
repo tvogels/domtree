@@ -1,4 +1,5 @@
 from typing import List, NamedTuple
+
 import requests
 from bs4 import BeautifulSoup
 

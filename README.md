@@ -1,6 +1,6 @@
 # DOM Tree
 
-Simple API to create DOM trees in Python. 
+Simple API to create DOM trees in Python.
 A bit like JSX, but with native Python syntax.
 
 Aims to include useful autocompletion. Currently this works for SVGs.
@@ -50,7 +50,7 @@ li = Node("li")
 
 print(
     ul(
-        li("First item"), 
+        li("First item"),
         li(className="second")("Second item")
     )
 )

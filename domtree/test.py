@@ -1,5 +1,5 @@
-from domtree.svg import *
 from domtree import Node
+from domtree.svg import *
 
 
 def main():

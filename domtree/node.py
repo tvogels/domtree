@@ -1,5 +1,6 @@
 from types import GeneratorType
-from typing import Any, Callable, Dict, Generator, List, Union, Optional
+from typing import Any, Callable, Dict, Generator, List, Optional, Union
+
 from typing_extensions import Self
 
 
@@ -103,8 +104,8 @@ class Node:
             yield tree
             if isinstance(tree, Node):
                 for child in tree.children:
-                    for entry in all_nodes_rec(child):
-                        yield entry
+                    yield from all_nodes_rec(child)
+
         return all_nodes_rec(self)
 
 
