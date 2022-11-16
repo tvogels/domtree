@@ -2,6 +2,7 @@
 requires = [
     "typing_extensions>=4",
     "setuptools>=42",
+    "scikit-build>=0.15.0",
 ]
 build-backend = "setuptools.build_meta"
 
