@@ -1,6 +1,6 @@
 [build-system]
 requires = [
-    "typing_extensions>=4",
+    "typing-extensions>=4",
     "setuptools>=42",
     "scikit-build>=0.15.0",
 ]
