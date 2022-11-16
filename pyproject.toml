@@ -1,10 +1,19 @@
 [build-system]
-requires = [
-    "typing-extensions>=4",
-    "setuptools>=42",
-    "scikit-build>=0.15.0",
-]
+requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "domtree"
+description = "DOM Tree syntax for python"
+version = "0.0.4"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+dependencies = ["typing_extensions>4"]
+optional-dependencies = { test = ["pytest"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.isort]
 profile = "black"
